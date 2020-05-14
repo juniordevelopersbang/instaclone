@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'accounts',
+    'post',
 ]
 
 MIDDLEWARE = [
@@ -136,7 +137,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MIDEA_ROOT = os.path.join(BASE_DIR, 'media')
 
+SITE_ID =1
+
 LOGIN_REDIRECT_URL = '/'
+
+ 
 
 
 

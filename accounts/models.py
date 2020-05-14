@@ -42,4 +42,4 @@ class Profile(models.Model):
                               default='N')
 
     def __str__(self):
-        return self.nicname
+        return self.nickname
