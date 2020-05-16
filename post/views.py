@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from .models import Post
 from .forms import PostForm
+from django.contrib import messages
 
 def post_list(request):
 
@@ -63,6 +64,9 @@ def post_edit(request, pk):
         'post': post,
         'form': form,
     })
+
+
+
 
 @login_required
 def post_delete(request, pk):
