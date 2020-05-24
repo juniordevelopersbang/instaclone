@@ -3,7 +3,7 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Instagram</title>
 
     <link rel="stylesheet" href="{% static 'css/common.css' %}" />
     <link rel="stylesheet" href="{% static 'css/login.css' %}" />
@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
-    <link rel="stylesheet" href="{% static 'js/insta.js' %}" />
-    <link rel="stylesheet" href="{% static 'js/rander_page.js' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'js/insta.js' %}" />
+    <link rel="stylesheet" href="{% static 'js/rander_page.js' %}" /> -->
   </head>
   <body>
     <section id="container">
       <header id="header">
         <section class="h_inner">
           <h1 class="logo">
+              <a href="{% url 'post:post_list' %}">
             <div class="sprite_insta_icon"></div>
             <div>
               <div class="sprite_write_logo"></div>
             </div>
+            </a>
           </h1>
           <div class="search_field">
             <input type="text" placeholder="검색" tabindex="0" />
@@ -33,7 +35,7 @@
             </div>
           </div>
           <div class="right_icons">
-            <div class="sprite_camer_icon"><a href="#"></a></div>
+            <div class="sprite_camera_icon"><a href="{% url 'post:post_new' %}"></a></div>
             <div class="sprite_compass_icon"><a href="#"></a></div>
             <div class="sprite_heart_icon_outline"><a href="#"></a></div>
             <div class="sprite_user_icon_outline"><a href="#"></a></div>

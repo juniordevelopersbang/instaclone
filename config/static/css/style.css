@@ -322,6 +322,9 @@ body{
     opacity: 0.6;
 }
 
+.contents.content{
+    padding: 0px 20px;
+}
 
 .side_box{
     width: 293px;
